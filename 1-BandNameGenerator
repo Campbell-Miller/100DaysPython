@@ -1,0 +1,9 @@
+#greeting
+print("Welcome to the Band Name Generator")
+#asking for city name
+city = input("What City were you born in?\n")
+#asking for pet name
+pet = input("What is a name of a pet?\n")
+#printing band name by combining city and pet
+print("Your band name could be called " + city + " " + pet)
+#make sure cursor is on a new line by using \n
