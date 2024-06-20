@@ -1,0 +1,17 @@
+#intro
+print("Welcome to the top calculator!")
+#make variables of inputs and change them to proper num type
+total_bill = float(input("What was the total bill? $"))
+tip = int(input("How much tip would you like to give? 10, 12, or 15? "))
+total_people = int(input("How many people to split the bill? "))
+
+#make tip at 1.tip amount
+tip_decimal = tip / 100
+#use the math to find right answer
+num = (total_bill / total_people) * (1 + tip_decimal)
+#need to round num
+rounded_num = round(num, 2)
+#this roounds the final result to include the zero place in a decimal as 33.60 instead of 33.6
+rounded_num = "{:.2f}".format(num)
+
+print(f"Each person should pay: {rounded_num}")
