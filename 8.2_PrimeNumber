@@ -1,0 +1,25 @@
+# Write your code below this line 👇
+#define the function
+def prime_checker(number):
+#set count variable as 0 to count up every time the remainder is 0
+  count = 0
+#set range up to 100 through for loop
+  for value in range(1, 101):
+#set remainder variable to find remainder for every step of the loop
+    remainder = number % value
+#add one to count every time the remainder is whole
+    if remainder == 0:
+      count = count + 1
+#its a prime number if count is 2 as no other remainders were whole
+  if count == 2:
+    print("It's a prime number.")
+  else:
+    print("It's not a prime number.")
+
+
+
+# Write your code above this line 👆
+    
+#Do NOT change any of the code below👇
+n = int(input()) # Check this number
+prime_checker(number=n)
